@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    flex-direction: row; 
+
+
+}
+
+main,
+#endoimage {
+    width: 50%;
+    height: auto;
+
+}
+
+#endobil {
+
+}

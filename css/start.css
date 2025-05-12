@@ -1,0 +1,36 @@
+
+body {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: url("../img/pinishback.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+Main {
+    display: flex;
+    flex-direction: row; 
+}
+
+img {
+    padding: 2%;
+}
+
+#texter {
+    width: 25%;
+    height: auto;
+}
+
+#videoen {
+    width: 25%;
+    height: auto;
+}
+
+#texter.hover,
+#videoen.hover {
+    cursor: pointer;
+
+}

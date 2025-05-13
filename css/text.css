@@ -1,17 +1,44 @@
-body {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+
+    background-image: url("../img/pinishback.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#maintekst {
     display: flex;
     flex-direction: row; 
 
-
-}
-
-main,
-#endoimage {
-    width: 50%;
-    height: auto;
-
+    padding: 5%;
 }
 
 #endobil {
+    width: 85%;
+    height: auto;
+
+    margin: 5%;
+}
+
+#endoimage {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#engtekst {
+    width: 75%;
+    height: auto;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    padding: 2%;
 
 }

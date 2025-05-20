@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 main {
 
     background-image: url("../img/pinishback.avif");
@@ -12,12 +16,27 @@ main {
     background-size: cover;
 }
 
+.goback {
+    margin: 1%;
+    padding: 1%;
+    
+    background-color: rgb(247, 100, 176);
+}
+
+.goback:hover {
+    background-color: rgb(152, 70, 112);
+}
 
 #maintekst {
     display: flex;
     flex-direction: row; 
 
-    padding: 5%;
+    padding: 2%;
+}
+
+#datekst {
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #endobil {
@@ -33,7 +52,7 @@ main {
 }
 
 #engtekst {
-    width: 75%;
+    width: 90%;
     height: auto;
 
     margin-right: auto;

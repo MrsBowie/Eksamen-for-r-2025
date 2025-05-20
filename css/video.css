@@ -1,0 +1,24 @@
+
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.goback {
+    margin: 2%;
+    padding: 2%;
+    
+    background-color: rgb(247, 100, 176);
+}
+
+.goback:hover {
+    background-color: rgb(152, 70, 112);
+}
+
+#endovid {
+    margin: 2%;
+
+    width: 60%;
+    height: auto;
+}

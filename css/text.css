@@ -5,17 +5,24 @@
 }
 
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-main {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 
     background-image: url("../img/pinishback.avif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/*alle knapper*/
+button {     
+    border-radius: 8%;    /* rundede hjørner*/
+}
+
+/* tilbage */
 .goback {
     margin: 1%;
     padding: 1%;
@@ -25,8 +32,10 @@ main {
 
 .goback:hover {
     background-color: rgb(152, 70, 112);
+    cursor: pointer;
 }
 
+/* alt tekst*/
 #maintekst {
     display: flex;
     flex-direction: row; 
@@ -34,11 +43,13 @@ main {
     padding: 2%;
 }
 
+/* dansk tekst*/
 #datekst {
     margin-right: auto;
     margin-left: auto;
 }
 
+/* billede*/
 #endobil {
     width: 85%;
     height: auto;
@@ -51,6 +62,7 @@ main {
     margin-bottom: auto;
 }
 
+/* engelsk tekst*/
 #engtekst {
     width: 90%;
     height: auto;

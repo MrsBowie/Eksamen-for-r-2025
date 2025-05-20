@@ -11,11 +11,19 @@
 <body>
 
     <main>
-        <a href="../start.html"><button class="goback">Tilbage</button></a>
+        
+        <a href="../start.html"><button id="goback">Tilbage</button></a>
         
         <video id="endovid"><source src="../video/Endometriose.mp4" type="video/mp4"></video>
+
+        <div id="buttons">
+            <button onclick="playvid()" type="button" class="buttons">Afspil Video</button>
+            <button onclick="pausevid()" type="button" class="buttons">Pause Video</button>
+
+            <button onclick="anime()" type="button" class="buttons" id="butanime">Gå til animation</button>
+        </div>
     </main> 
     
-    <script src="../java/video.java"></script>
+    <script src="../java/video.js"></script>
 </body>
 </html>

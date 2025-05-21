@@ -22,11 +22,17 @@ button {
     border-radius: 8%;    /* rundede hjørner*/
 }
 
+#topbut {
+    display: flex;
+    flex-direction: row; 
+}
+
 /* tilbage */
 .goback {
     margin: 1%;
-    padding: 1%;
-    
+    padding: 35% 35%;
+    min-width: 15%;
+
     background-color: rgb(247, 100, 176);
 }
 
@@ -38,9 +44,10 @@ button {
 /* alt tekst*/
 #maintekst {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
 
     padding: 2%;
+    gap: 2%;
 }
 
 /* dansk tekst*/
@@ -50,19 +57,29 @@ button {
 }
 
 /* billede*/
-#endobil {
+.endobil {
     width: 85%;
     height: auto;
 
     margin: 5%;
 }
 
-#endoimage {
+.endoimage {
     margin-top: auto;
     margin-bottom: auto;
 }
 
 /* engelsk tekst*/
+/* alt tekst*/
+#engelsktekst {
+    display: flex;
+    flex-direction: row; 
+
+    display: none;
+
+    padding: 2%;
+}
+
 #engtekst {
     width: 90%;
     height: auto;
@@ -72,4 +89,37 @@ button {
 
     padding: 2%;
 
+}
+
+/* sprog knap */
+#sprog {
+    margin: 1%;
+    padding: 1%;
+
+    margin-left: 90%;
+
+    
+    background-color: rgb(247, 100, 176);
+}
+
+#sprog:hover {
+    background-color: rgb(152, 70, 112);
+    cursor: pointer;
+}
+
+#data {
+    margin: 1%;
+    padding: 2% 25%;
+
+    margin-left: 25%;
+    font-size: 120%;
+
+    background-color: rgb(247, 100, 176);
+}
+
+#data:hover,
+#data:visited {
+    text-decoration: none;
+    background-color: rgb(152, 70, 112);
+    cursor: pointer;
 }

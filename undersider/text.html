@@ -10,7 +10,11 @@
 
 <body>
     <main>
-        <a href="../start.html"><button class="goback">Tilbage</button></a>
+        <div id="topbut">
+            <a href="../start.html"><button class="goback">Tilbage</button></a>
+
+            <button onclick="display()" id="sprog">Engelsk</button>
+        </div>
 
         <div id="maintekst">
             <div id="datekst">
@@ -39,30 +43,38 @@
                 For selvom man ikke kan se endometriose, er det noget, der findes – og man kan få hjælp.
             </div>
             
-            <div id="endoimage">
-                <img src="../img/endoimg.jpeg" alt="hurtendometriose" id="endobil">
+            <div class="endoimage">
+                <img src="../img/endoimg.jpeg" alt="hurtendometriose" class="endobil">
             </div>
         </div>
 
-        <div id="engtekst">
-            <h3>What is Endometriosis?</h3> <br>
-            <br>
-            Inside a girl’s or woman’s body is a place called the uterus, where a baby can grow. 
-            Each month, the body makes a soft, cushiony lining inside the uterus to get ready for a baby. 
-            If there's no baby, that lining leaves the body during a period. <br>
-            <br>
-            But with endometriosis, this soft lining also grows outside the uterus, 
-            where it shouldn’t be—like on the stomach, ovaries, or other parts. <br>
-            <br>
-            This can cause pain, especially during periods, because the lining outside the uterus has no way to leave the body. 
-            It can feel like strong cramps or stomach aches. <br>
-            <br>
-            Endometriosis can make someone very tired and, later in life, it might make it harder to have a baby. 
-            But doctors can help with medicine and other treatments.
-            Even though you can’t see it, endometriosis is real—and it’s okay to talk about it and ask for help.
+        <div id="engelsktekst">
+            <div id="engtekst">
+                <h3>What is Endometriosis?</h3> <br>
+                <br>
+                Inside a girl’s or woman’s body is a place called the uterus, where a baby can grow. 
+                Each month, the body makes a soft, cushiony lining inside the uterus to get ready for a baby. 
+                If there's no baby, that lining leaves the body during a period. <br>
+                <br>
+                But with endometriosis, this soft lining also grows outside the uterus, 
+                where it shouldn’t be—like on the stomach, ovaries, or other parts. <br>
+                <br>
+                This can cause pain, especially during periods, because the lining outside the uterus has no way to leave the body. 
+                It can feel like strong cramps or stomach aches. <br>
+                <br>
+                Endometriosis can make someone very tired and, later in life, it might make it harder to have a baby. 
+                But doctors can help with medicine and other treatments.
+                Even though you can’t see it, endometriosis is real—and it’s okay to talk about it and ask for help.
+            </div>
+            
+            <div class="endoimage">
+                <img src="../img/endoimg.jpeg" alt="hurtendometriose" class="endobil">
+            </div>
         </div>
+
+        <a href="#"><button onclick="popup()" id="data">Undersøgelse</button></a>
     </main>
 
-    <script src="../java/text.java"></script>
+    <script src="../java/text.js"></script>
 </body>
 </html>

@@ -13,15 +13,14 @@
     <main>
         
         <a href="../index.html"><button id="goback">Tilbage</button></a>
-        
-        <video id="endovid"><source src="../video/Endometriose.mp4" type="video/mp4"></video>
 
-        <div id="buttons">
-            <button onclick="playvid()" type="button" class="buttons">Afspil Video</button>
-            <button onclick="pausevid()" type="button" class="buttons">Pause Video</button>
+        <img onclick="videoscreen()" src="../img/xknap.png" alt="buttonx" id="buttonx">
 
-            <button onclick="anime()" type="button" class="buttons" id="butanime">Gå til animation</button>
+        <div id="videoer">
+            <video id="endovid" onclick="vid1()"><source src="../video/Endometriose.mp4" type="video/mp4"></video>
+            <iframe id="endovid2" onclick="vid2()" src="https://www.youtube.com/embed/2S3yCrlROYg"></iframe>
         </div>
+
     </main> 
     
     <script src="../java/video.js"></script>

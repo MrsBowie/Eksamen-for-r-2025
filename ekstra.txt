@@ -1,0 +1,111 @@
+    <main>
+        
+        <a href="../index.html"><button id="goback">Tilbage</button></a>
+        
+        <video id="endovid"><source src="../video/Endometriose.mp4" type="video/mp4"></video>
+
+        <div id="buttons">
+            <button onclick="playvid()" type="button" class="buttons">Afspil Video</button>
+            <button onclick="pausevid()" type="button" class="buttons">Pause Video</button>
+
+            <button onclick="anime()" type="button" class="buttons" id="butanime">Gå til animation</button>
+        </div>
+    </main> 
+
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: url("../img/pinishback.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+/*alle knapper*/
+button {     
+    border-radius: 8%;    /* rundede hjørner*/
+}
+
+/* tilbage*/
+#goback {
+    flex: 0 0 auto;
+    width: auto;
+    min-width: 70%;       /*bredde den minimum kan have*/
+    
+    padding: 35% 35%;
+    margin: 5% auto;
+    
+    background-color: rgb(247, 100, 176);
+    text-align: center;
+    white-space: nowrap; /*tekst bliver på en linje*/
+}
+
+#goback:hover {
+    background-color: rgb(152, 70, 112);
+    cursor: pointer;
+}
+
+/* video*/
+#endovid {
+    flex: 0 0 60%;
+    margin: 0 auto;
+}
+
+/* knapper*/
+#buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 20%;
+
+        /* optional: set height if you want to control the vertical space */
+    height: 100vh;  /* or any fixed height to fill the viewport */
+}
+
+
+.buttons {
+    margin: 5% auto;
+    padding: 4% 6%; /* vertikal 4%, horisontal 6% bredde */
+    width: 80%;
+    background-color: rgb(247, 100, 176);
+    text-align: center;
+}
+
+.buttons:hover {
+    background-color: rgb(152, 70, 112);
+    cursor: pointer;
+}
+
+#butanime {
+    margin-top: auto; /* pushes this element down */
+    margin-bottom: 5%; /* optional spacing from bottom */
+}
+
+let vid = document.getElementById("endovid"); 
+
+function playvid() { 
+  vid.play(); 
+} 
+
+function pausevid() { 
+  vid.pause(); 
+} 
+
+function anime() {
+    vid.currentTime = 26;
+}
